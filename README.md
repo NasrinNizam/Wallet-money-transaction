@@ -8,6 +8,7 @@
 03 . Javasrcipt<br>
 
 <h4> Features : </h4>
+
 01. Main Balance<br>
 02. Mobile reacharge<br>
 03. Send money<br>
@@ -15,3 +16,12 @@
 05. Withdraw<br>
 06. Payment<br>
 07. History<br>
+
+<h3>pages :</h3>
+Home page<br>
+About page<br>
+Service Page<br>
+Login Page<br>
+Getstarted page<br>
+Main account page.
+
