@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===== common css start ===== */
+*{
+    margin    : 0;
+    padding   : 0;
+    outline   : 0;
+    box-sizing: border-box;    
+}
+a{
+    display         : inline-block;
+    text-decoration : none;
+}
+ul , li{
+    list-style : none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin  : 0;
+    padding : 0;
+}
+body{
+    min-width   : 100%;
+    min-height  : 100vh;
+    
+}
+:root{
+    --montserrat:"Montserrat", sans-serif;
+}
+/* ===== nav start ==== */
+.menu{
+    background     : rgb(1, 1, 67);
+    color          : white;
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+}
+.menu ul {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    gap             : 40px;
+}
+.menu ul li a{
+    font-size      : 18px;
+    font-weight    : 700;
+    font-family    : var(--montserrat);
+    letter-spacing : 2px;
+    color          : white;
+    transition     : all linear .3s;
+}
+.menu ul li a:hover{
+    scale  : 1.2;
+}
+.text{
+    text-align : center;
+    color      : white;    
+}
+.text h1{
+    font-size      : 24px;
+    font-weight    : 700;
+    font-family    : var(--montserrat);
+    letter-spacing : 8px;
+}
+.text h4{
+    font-size    : 18px;
+    font-weight  : 500;
+    font-family  : var(--montserrat);
+    font-style   : italic;
+}
+
+
+/* ===== nav start ==== */
+/* ===== home section start ==== */
+.home{
+
+    position : absolute;
+    left     : 20px;
+    top      : 100px;
+}
+
+.slider{
+    position   : relative;
+    width      : 100%;
+    min-height : 100vh;
+}
+
+
+.slider img{
+    width   : 100%;
+    height  : 600px;
+    opacity : .8;
+}
+.home h1{
+    width      : 620px;
+    font-size  : 53px;
+    font-weight: 700;
+    font-family: var(--montserrat);
+    padding-top: 120px;
+    color      : rgb(1, 1, 67);;
+}
+.home p{
+    width          : 500px;
+    font-size      : 20px;
+    font-weight    : 500;
+    font-family    : var(--montserrat);
+    margin-top     : 30px;
+    margin-bottom  : 30px;
+    color          : rgb(1, 1, 67);;
+}
+.home a{
+    padding         : 15px 30px;
+    border          : 1px solid rgb(1, 1, 67);
+    background      : rgb(1, 1, 67);
+    border-radius   : 40px;
+    font-size       : 22px;
+    font-weight     : 900;
+    font-family     : var(--montserrat);
+    letter-spacing  : 2px;
+    line-height     : 30px;
+    color           : white;
+    margin-bottom   : 90px;
+    transition      : all linear .3s;
+}
+.home a:hover{
+    box-shadow : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background : rgb(241, 223, 223);
+    color      : rgb(1, 1, 67);
+}
+.team{
+    width            : 100%;
+    background       : rgb(241, 223, 223);
+    color            : rgb(1, 1, 67);
+    padding          : 30px 20px;
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : center;
+    align-items      : center;
+    
+    
+}
+.team h2{
+    font-size     : 38px;
+    font-weight   : 600;
+    font-family   : var(--montserrat);
+    margin-top    : 50px;
+    margin-bottom : 20px;
+    text-align    : center;
+}
+.team .team-a{
+    background    : rgb(1, 1, 67);
+    padding       : 10px 20px;
+    color         : white;
+    border-radius : 20px;
+    border        : 2px solid rgb(1, 1, 67);
+    transition    : all linear .3s;
+}
+.team .team-a:hover{
+    background : white;
+    color      : rgb(1, 1, 67);
+}
+
+.footer{
+    width           : 100%;
+    height          : 250px;
+    background      : rgb(1, 1, 67);
+    color           : white;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    gap             : 20px;
+}
+.iconDiv{
+    display          : flex;
+    justify-content  : center;
+    gap              : 20px;
+    text-align       : center;
+}
+.iconDiv a{
+    background     : white;
+    color          : rgb(1, 1, 67);
+    padding        : 2px 8px;
+    border         : none;
+    border-radius  : 50%;
+    transition     : all linear .3s;
+}
+.iconDiv a:hover{
+    color : #000;
+    scale : 1.2;
+
+}
+.textDiv{
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    gap             : 20px;
+    text-align      : center;
+}
+.textDiv a{
+    color       : white;
+    font-size   : 16px;
+    font-weight : 700;
+    font-family : var(--montserrat);
+}
+.textDiv a:hover{
+    color : orangered;
+}
+.line{
+    width      : 1px;
+    height     : 12px;
+    background : #fff;
+}
+.copy .faicon{
+    border        : 1px solid white;
+    border-radius : 50%;
+}
+.copy a{
+    color       : #fff;
+    margin-left : 5px;
+}
+.copy a:hover{
+    color           : purple;
+    text-decoration : underline;
+}
+
+/* ===== home section end ==== */
+/* ===== get started start ==== */
+.getStarted .move-money{
+    margin-top    : 40px;
+    margin-bottom : 20px;
+    font-size     : 38px;
+    font-weight   : 600;
+    font-family   : var(--montserrat);
+    color         : rgb(1, 1, 67);
+}
+.getStarted .move-money-p{
+    font-size   : 16px;
+    font-weight : 500;
+    font-family : var(--montserrat);
+    color       : grey;
+}
+.get-h4{
+    font-size     : 24px;
+    font-weight   : 600;
+    font-family   : var(--montserrat);
+    color         : rgb(1, 1, 67);
+    margin-bottom : 15px;
+    margin-top    : 15px;
+    text-align    : center;
+}
+.get-p{
+    font-size   : 16px;
+    font-weight : 500;
+    font-family : var(--montserrat);
+    text-align  : center;
+}
+.get-fa{
+    color : rgb(1, 1, 67);
+}
+
+/* ===== get started end ==== */
+/* ===== about section start == */
+.about{
+   width      : 100%;
+   min-height : 100vh;
+   background : whitesmoke;
+   color      :rgb(1, 1, 67);
+   text-align : center;
+}
+.about h2{
+    font-size    : 34px;
+    font-weight  : 500;
+    font-family  : var(--montserrat);
+    color        : rgb(1, 1, 67); 
+    padding-top  : 30px;
+    margin-bottom: 20px;
+}
+.about .about-p{
+    width         : 500px;
+    font-size     : 18px;
+    font-weight   : 400;
+    font-family   : var(--montserrat);
+    color         : rgb(1, 1, 67);
+    margin        : 0 auto;
+    margin-bottom : 60px;
+}
+.cards{
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    flex-wrap       : wrap;
+    gap             : 30px;
+    margin-bottom   : 30px;
+    padding-bottom  : 20px;
+}
+.card{
+    width        : 520px;
+    height       : 200px;
+    background   : white;
+    padding-top  : 13px;
+    text-align   : center;
+    color        : rgb(1, 1, 67);
+    box-shadow   : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition   : all linear .3s;
+    
+}
+.card:hover{
+    background : rgb(1, 1, 67);
+    color      : white;
+    scale      : 1.1;
+}
+
+.card h3{
+    font-size    : 24px;
+    font-weight  : 600;
+    font-family  : var(--montserrat);
+    line-height  : 30px;
+    margin-bottom: 6px;
+}
+.card .card-p{
+    font-size   : 18px;
+    font-weight : 400;
+    font-family : var(--montserrat);
+}
+.counter-text h3{
+    font-size       : 30px;
+    font-weight     : 700;
+    font-family     : var(--montserrat);
+    color           : rgb(1, 1, 67);
+    text-align      : center;
+    letter-spacing  : 2px;
+}
+.counter{
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    gap             : 50px;
+    margin-top      : 60px;
+    margin-bottom   : 80px;
+}
+.main{
+    width           : 200px;
+    height          : 150px;
+    background      : white;
+    color           : black;
+    border          : 1px solid white;
+    border-radius   : 10px;
+    padding         : 10px;
+    text-align      : center;
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    flex-direction  : column;
+    box-shadow      : rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition      : all linear .3s;
+}
+.main:hover{
+    scale : 1.1;
+}
+.main i{
+    background : white;
+    color      : rgb(1, 1, 67);
+}
+.main h2{
+    font-size   : 38px;
+    font-weight : 900;
+
+}
+.main h6{
+    font-size      : 18px;
+    text-transform : uppercase;
+    color          : rgb(1, 1, 67);
+}
+/* ===== about section end ===== */
+/* ===== service section start ==== */
+.service{
+    width       : 100%;
+    min-height  : 100vh;
+    background  : whitesmoke;
+    color       : rgb(1, 1, 67);
+}
+.service h2{
+    font-size     : 34px;
+    font-weight   : 600;
+    font-family   : var(--montserrat);
+    padding-top   : 40px;
+    text-align    : center;
+    margin-bottom : 20px;
+}
+.service .service-p{
+    width         : 500px;
+    margin        : 0 auto;
+    text-align    : center;
+    font-size     : 18px;
+    font-weight   : 400;
+    font-family   : var(--montserrat);
+    margin-bottom : 50px;
+}
+.s-cards{
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
+    gap             : 30px;
+}
+.s-card{
+    width       : 250px;
+    height      : 250px;
+    background  : white;
+    color       : rgb(1, 1, 67);
+    text-align  : center;
+    padding-top : 40px;
+    transition  : all linear .5s;
+    box-shadow  : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.s-card:hover{
+    background  : rgb(1, 1, 67);
+    color       : white;
+    scale       : 1.1;
+}
+.s-card h3{
+    font-size    : 24px;
+    font-weight  : 700;
+    font-family  : var(--montserrat);
+    margin-top   : 35px;
+}
+/* ==== service section end ==== */
+
+/* ==== login section start ==== */
+.account{
+    width      : 100%;
+    min-height : 100vh;
+    background : rgb(1, 1, 67);
+    color      : white;
+}
+
+.login-page, .sign-up{
+    width         : 500px;
+    background    : transparent; 
+    border        : 1px solid white;
+    border-radius : 7px;
+    text-align    : center;
+    margin-top    : 20px;
+}
+.form{
+    display         : flex;
+    justify-content : center;
+    flex-direction  : column;
+    align-items     : center;
+    gap             : 20px;
+    padding-bottom  : 20px;
+}
+.email , .email2 , .full-name{
+    width        : 80%;
+    padding      : 10px;
+    border       : none;
+    border-radius: 5px;
+    font-size    : 16px;
+    font-weight  : 400;
+    font-family  : var(--montserrat);
+    color        : rgb(1, 1, 67);
+    text-align   : center;
+}
+.password , .password2{
+    width         : 80%;
+    padding       : 10px;
+    border        : none;
+    border-radius : 5px;
+    font-size     : 16px;
+    font-weight   : 400;
+    font-family   : var(--montserrat);
+    color         : rgb(1, 1, 67);
+    text-align    : center;
+}
+.log-button , .log-button2{
+    padding       : 10px;
+    border        : 1px solid white;
+    border-radius : 8px;
+    font-size     : 18px;
+    font-weight   : 700;
+    font-family   : var(--montserrat);
+    color         : rgb(1, 1, 67);
+    transition    : all linear .3s;
+}
+.log-button:hover , .log-button2:hover{
+    background : rgb(1, 1, 67);
+    color      : white;
+    scale      : 1.2;
+}
+.log-button:active{
+    scale : 1.4;
+}
+.alert{
+    font-size    : 16px;
+    font-weight  : 400;
+    font-family  : var(--montserrat);
+    color        : red;
+}
+.login-page h4{
+    font-size  : 16px;
+    font-weight: 500;
+    font-family: var(--montserrat);
+}
+.login-page h4 a{
+    font-weight : 900;
+    color       : orangered;
+}
+.register{
+    display : none;
+}
+
+
+/* ====== login section end ======= */
+/* ====== main account start ===== */
+.main-account{
+    width       : 100%;
+    min-height  : 100vh;
+    background  : rgb(1, 1, 67);
+    color       : white;
+    padding-top : 30px;
+}
+
+.main-account .upper{
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    margin-bottom   : 90px;
+}
+.welcome h1{
+    font-size    : 28px;
+    font-weight  : 700;
+    font-family  : var(--montserrat);
+    color        : orangered;
+}
+.welcome h2{
+    font-size  : 24px;
+    font-weight: 900;
+    font-family: var(--montserrat);
+    margin-top : 10px;
+}
+.total{
+    background    : white;
+    color         : rgb(1, 1, 67);
+    border-radius : 5px;
+    text-align    : center;
+    margin-top    : 10px;
+
+}
+.history{
+    width         : 180px;
+    background    : transparent;
+    border-radius : 5px;
+    text-align    : center;
+    padding       : 5px;
+    position      : relative;
+}
+.history h3 a{
+    font-size      : 24px;
+    font-weight    : 500;
+    font-family    : var(--montserrat);
+    color          : white;
+    margin-bottom  : 10px;
+    transition     : all linear .3s;
+
+}
+.history h3 a:hover{
+    color  : orangered;
+}
+.history h3 a:active{
+    scale : 1.1;
+}
+.history .serial{
+    background : white;
+    color      : rgb(1, 1, 67);
+    display    : none;
+    text-align : center;
+}
+.history .check{
+    width        : 150px;
+    padding      : 3px;
+    background   : transparent;
+    color        : white;
+    border       : none;
+    border-radius: 8px;
+    font-size    : 16px;
+    font-weight  : 400;
+    font-family  : var(--montserrat);
+    text-align   : left;
+    list-style   : circle;
+    margin-left  : 20px;
+    transition   : all linear .3s;
+    
+}
+.all{
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    gap             : 30px;
+}
+.facilities{
+    width        : 140px;
+    height       : 140px;
+    background   : white;
+    text-align   : center;
+    border       : 1px solid white;
+    border-radius: 8px;
+    color        : rgb(1, 1, 67);
+    padding-top  : 10px;
+    transition   : all linear .3s;
+}
+.facilities:hover{
+    scale      : 1.1;
+    box-shadow : rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.facilities h3 a{
+    font-size  : 18px;
+    font-weight: 600;
+    font-family: var(--montserrat);
+    color      : rgb(1, 1, 67); 
+}
+.all h3 a:hover{
+    color : orangered;
+}
+.step1, .step2 ,.step3 ,.step4 , .step5, .step6 ,.step7 ,.step8 {
+    width      : 500px;
+    height     : 150px;
+    background : transparent;
+    margin     : 0 auto;
+    text-align : center;
+    margin-top : 20px;
+    display    : none;
+}
+.step1 label , .step2 label{
+    font-size     : 24px;
+    font-weight   : 600;
+    font-family   : var(--montserrat);
+    letter-spacing: 3px;
+    color         : white;
+}
+.phone , .phone2 , .phone3 , .phone4, .taka , .taka2 , .taka3 ,.taka4{
+    width        : 400px;
+    padding      : 10px;
+    border       : none;
+    border-radius: 20px 0 0 20px;
+    color        : black;
+    text-align   : center;
+    font-size    : 18px;
+    font-weight  : 600;
+    background   :white;
+}
+.next , .next2 , .next3 , .next4 , .next5 , .next6 , .next7 , .next8{
+    padding    : 10px 15px;
+    border     : 2px solid white;
+    background : rgb(1, 1, 67);
+    color      : white;
+    transition : all linear .3s;
+    font-weight: 600;
+}
+.next:hover , .next2:hover , .next3:hover , .next4:hover , .next5:hover , .next6:hover , .next7:hover , .next8:hover{
+    background   : white;
+    border       : 2px solid white;
+    color        : rgb(1, 1, 67);
+}
+.done{
+    font-size   : 24px;
+    font-weight : 700;
+    color       : lawngreen;
+    font-family : var(--montserrat);
+    text-align  : center;
+    margin-top  : 30px;
+    display     : none;
+}
+.done .donebtn{
+    padding      : 10px 20px;
+    background   : lawngreen;
+    border       : none;
+    border-radius: 10px;
+    margin-top   : 20px;
+    color        : orangered;
+    font-size    : 18px;
+    font-weight  : 700;
+    font-family  : var(--montserrat);
+    transition   : all linear .3s;
+}
+.done .donebtn:hover{
+    scale : 1.1;
+    color : maroon;
+}
+.Three{
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    text-align      : center;
+}
+.last{
+    text-align   : center;
+    margin-top   : 40px;
+    font-size    : 22px;
+    font-family  : var(--montserrat);
+    font-weight  : 600;
+    display      : none;
+}
+.last a{
+    color : white;
+}
+.last a:hover{
+    color : orangered;
+}
+.last1, .last2{
+    width          : 500px;
+    padding        : 20px;
+    border         : 1px solid white;
+    border-radius  : 5px;
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    gap            : 30px;
+    flex-direction : column;
+    display        : none;
+}
+.last1 input , .last2 input{
+    width        : 400px;
+    padding      : 10px;
+    background   : white;
+    border       : none;
+    border-radius: 10px;
+    font-size    : 18px;
+    font-weight  : 400;
+    font-family  : var(--montserrat);
+    color        : #000;
+    margin-top   : 10px;
+    text-align   : center;
+}
+.cardbtn , .bankbtn{
+    width         : 100px;
+    padding       : 10px;
+    background    : white;
+    color         : rgb(1, 1, 67);
+    border        : 1px solid white;
+    border-radius : 10px;
+    transition    : all linear .3s;
+    margin-top    : 10px;
+}
+.cardbtn:hover , .bankbtn:hover{
+    background : rgb(1, 1, 67);
+    color      : white;
+    scale      : 1.1;
+}
+.last2 select{
+    width        : 400px;
+    padding      : 10px;
+    border       : none;
+    border-radius: 5px;
+    text-align   : center;
+}
+/* ====== done ====== */
+
+
+
+
+
+
